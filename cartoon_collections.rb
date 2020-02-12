@@ -7,10 +7,11 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(calls_long)
-    calls_long.any? { |e| e.length > 4 }
-  end
+  calls_long.any? { |call| call.length > 4}
+end
 
-  def find_the_cheese(contains_cheddar)
-    cheese_types = ["cheddar", "gouda", "camembert"]
-      contains_cheddar.find {|type| cheese_types.include?(type)}
+
+def find_the_cheese(contains_cheddar)
+cheese_types = ["gouda", "camambert", "cheddar"]
+contains_cheddar.find { |cheese| cheese_types.include?(cheese)}
   end
